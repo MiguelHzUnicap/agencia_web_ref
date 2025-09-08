@@ -1,0 +1,15 @@
+:root{
+  --bg: #0f1724;
+  --accent: #6c5ce7;
+  --muted: #94a3b8;
+  --white: #ffffff;
+}
+body{margin:0;font-family:Inter, sans-serif;background:#0f1724;color:#fff}
+.container{width:92%;max-width:1200px;margin:0 auto}
+header{background:#0b1220;padding:1rem 0}
+.nav-list{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+.nav-list a{color:#fff;text-decoration:none}
+.hero{padding:2rem 0;display:grid;gap:2rem}
+.servicos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.servico-card{background:#1a2235;padding:1rem;border-radius:8px}
+footer{padding:1rem 0;text-align:center;background:#0b1220}

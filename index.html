@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agência Criativa Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <img src="images/logo-200.png" alt="Logo Agência Criativa Web" width="120" height="40" 
+             srcset="images/logo-200.png 1x, images/logo-400.png 2x">
+        <span class="brand">Agência Criativa Web</span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Design digital que conecta marcas e pessoas</h1>
+          <p class="lead">Criamos experiências digitais elegantes, funcionais e pensadas para crescer com o seu negócio.</p>
+          <a href="#contato" class="btn btn-primary">Solicitar Proposta</a>
+        </div>
+        <div class="hero-media">
+          <img src="images/banner-800.jpg" alt="Equipe criando projeto digital"
+               srcset="images/banner-480.jpg 480w, images/banner-800.jpg 800w, images/banner-1200.jpg 1200w"
+               sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 600px">
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <div class="sobre-inner">
+          <h2>Sobre Nós</h2>
+          <p>Somos uma agência focada em design digital e desenvolvimento front-end...</p>
+        </div>
+      </div>
+    </section>
+    <section id="servicos" class="servicos">
+      <div class="container">
+        <h2>Serviços</h2>
+        <div class="servicos-grid">
+          <article class="servico-card"><h3>Design Gráfico</h3></article>
+          <article class="servico-card"><h3>Desenvolvimento Web</h3></article>
+          <article class="servico-card"><h3>Branding</h3></article>
+          <article class="servico-card"><h3>UX/UI</h3></article>
+          <article class="servico-card"><h3>Marketing Digital</h3></article>
+          <article class="servico-card"><h3>Manutenção & Suporte</h3></article>
+        </div>
+      </div>
+    </section>
+    <section id="depoimentos" class="depoimentos">
+      <div class="container">
+        <h2>O que nossos clientes dizem</h2>
+      </div>
+    </section>
+    <section id="contato" class="contato">
+      <div class="container contato-grid">
+        <div class="contato-info">
+          <h2>Fale com a gente</h2>
+        </div>
+        <form class="contato-form" action="#" method="post">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required>
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="ano"></span> Agência Criativa Web</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
